@@ -1,17 +1,23 @@
 package fi.bookstore.controller;
 
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+
+import fi.bookstore.model.Book;
+import fi.bookstore.model.BookRepository;
 
 @Controller
 public class BookController {
 	
-	@RequestMapping(value="/index", method=RequestMethod.GET) 
-	public String bookStore(Model model){
+	@RequestMapping("/index") 
+	public String index(Model model){
 	
 		return "/index";
 	}
+	
+	 
 
 }
