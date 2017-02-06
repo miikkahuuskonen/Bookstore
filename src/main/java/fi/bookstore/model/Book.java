@@ -17,6 +17,10 @@ public class Book {
 	private String isbn;
 	private double price;
 	
+	public Book() {
+		
+	}
+	
 	public Book(long id, String title, String author, int year, String isbn, double price) {
 		super();
 		
@@ -74,13 +78,6 @@ public class Book {
 
 	public void setPrice(double price) {
 		this.price = price;
-	}
-
-	@Override
-	public String toString() {
-		return "Book [id=" + id + ", title=" + title + ", author=" + author + ", year=" + year + ", isbn=" + isbn
-				+ ", price=" + price + "]";
-	}
-	
+	}	
 
 }
