@@ -34,7 +34,7 @@
 				<td><a sec:authorize="hasAuthority('ADMIN')" th:href="@{/delete/{id}(id=${book.id})}" class="btn btn-danger">Delete</a></td>
 			</tr>
 		</table>
-		<a href="/addStudent" class="btn btn-success">Add Book</a>
+		<a sec:authorize="hasAuthority('ADMIN')" href="/addBook" class="btn btn-success">Add Book</a>
 	</div>
 </body>
 </html>
